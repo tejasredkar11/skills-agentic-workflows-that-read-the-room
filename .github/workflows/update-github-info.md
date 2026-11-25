@@ -20,6 +20,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -34,9 +35,10 @@ safe-outputs:
 Read `notes/mona-notes.md` first and follow Mona's editorial preferences.
 Read `site/content/github-info.md` to understand the current content and style.
 
-Use web-fetch to read both official sources:
+Use web-fetch to read all of these sources:
 - GitHub Blog: https://github.blog/latest/
 - GitHub Changelog: https://github.blog/changelog/
+- Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
 Compare the latest entries with the existing website content. Select only
 relevant, factual updates that help developers learn GitHub faster. Treat
@@ -50,7 +52,7 @@ articles verbatim or invent details unsupported by the sources.
 Before proposing changes, use the GitHub repository API tools to check open
 pull requests for equivalent GitHub Info updates. Use `noop` with a brief reason
 if the updates are already proposed or no meaningful content change is needed.
-If either source or either required repository file is unavailable, stop and
+If any source or either required repository file is unavailable, stop and
 use `report_incomplete` to identify the missing evidence; do not propose an
 unverified update.
 
